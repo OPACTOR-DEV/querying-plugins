@@ -1,6 +1,6 @@
 # querying.ai
 
-querying.ai runs real-browser prompts against AI answer engines and returns each answer with its sources. The tools come from the `querying` MCP server and need the `QUERYING_API_KEY` environment variable (a `vt_` key from https://querying.ai/dashboard/keys).
+querying.ai runs real-browser prompts against AI answer engines and returns each answer with its sources. The tools come from the `querying` MCP server, which connects by signing in to a querying.ai account.
 
 ## Pick the tool
 
@@ -21,5 +21,5 @@ querying.ai runs real-browser prompts against AI answer engines and returns each
 - Credits are charged per task (about 1 to 1.25 for answer engines; `web_search` 0.5 or 2). Read `get_credits` and state how many calls and credits a large batch or a location grid will spend before you start it.
 - Use the engine and country the user's buyers use. Compare the same prompt across engines by running it once per `taskType`.
 - Report answers with their `sources`. Say which engine and country each answer came from, and do not merge answers from different engines.
-- If a call reports `MISSING_API_KEY`, ask the user to create a key at https://querying.ai/dashboard/keys and set `QUERYING_API_KEY`. Do not ask for the key in chat.
+- If the `querying` tools are missing or a call says the server needs authentication, ask the user to sign in: `/mcp` in Claude Code, `codex mcp login querying` in Codex, `/mcp auth querying` in Gemini CLI, or Connect in Cursor. Do not ask for an API key in chat.
 - Engine details and fields: https://docs.querying.ai/engines/overview

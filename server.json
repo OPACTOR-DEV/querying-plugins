@@ -3,7 +3,7 @@
   "name": "io.github.OPACTOR-DEV/querying",
   "title": "querying.ai",
   "description": "AI engine answers with sources, prompt research and GEO monitors for ChatGPT, Gemini, Perplexity.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "websiteUrl": "https://querying.ai",
   "repository": {
     "url": "https://github.com/OPACTOR-DEV/querying-plugins",
@@ -12,23 +12,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.querying.ai/mcp",
-      "headers": [
-        {
-          "name": "Authorization",
-          "description": "Bearer <vt_ API key> from https://querying.ai/dashboard/keys",
-          "isRequired": true,
-          "isSecret": true,
-          "value": "Bearer {api_key}",
-          "variables": {
-            "api_key": {
-              "description": "querying.ai API key (vt_...)",
-              "isRequired": true,
-              "isSecret": true
-            }
-          }
-        }
-      ]
+      "url": "https://mcp.querying.ai/mcp"
     }
   ]
 }

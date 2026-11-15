@@ -1,10 +1,7 @@
 {
   "mcpServers": {
     "querying": {
-      "url": "https://mcp.querying.ai/mcp",
-      "headers": {
-        "Authorization": "Bearer ${env:QUERYING_API_KEY}"
-      }
+      "url": "https://mcp.querying.ai/mcp"
     }
   }
 }

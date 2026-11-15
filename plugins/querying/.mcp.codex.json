@@ -1,8 +1,7 @@
 {
   "mcpServers": {
     "querying": {
-      "url": "https://mcp.querying.ai/mcp",
-      "bearer_token_env_var": "QUERYING_API_KEY"
+      "url": "https://mcp.querying.ai/mcp"
     }
   }
 }

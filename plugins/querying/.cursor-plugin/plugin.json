@@ -1,7 +1,7 @@
 {
   "name": "querying",
   "displayName": "querying.ai",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Ask ChatGPT, Gemini, Perplexity, Google AI and other AI answer engines a question and get the answer with its sources. Research prompts and track brand visibility with GEO monitors.",
   "author": {
     "name": "Anymorph",
