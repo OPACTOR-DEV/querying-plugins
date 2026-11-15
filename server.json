@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.OPACTOR-DEV/querying",
   "title": "querying.ai",
-  "description": "Answers and sources from ChatGPT, Gemini, Perplexity and other AI engines, prompt research and GEO monitors.",
+  "description": "AI engine answers with sources, prompt research and GEO monitors for ChatGPT, Gemini, Perplexity.",
   "version": "0.1.0",
   "websiteUrl": "https://querying.ai",
   "repository": {
