@@ -21,11 +21,14 @@
   "interface": {
     "displayName": "querying.ai",
     "shortDescription": "AI engine answers, sources and GEO monitors",
-    "longDescription": "Ask ChatGPT, Gemini, Perplexity, Google AI and other AI answer engines a question and get the answer with its sources. Research prompts and track brand visibility with GEO monitors. Needs a querying.ai API key in QUERYING_API_KEY.",
+    "longDescription": "Ask ChatGPT, Gemini, Perplexity, Google AI Overviews, Copilot, Naver and other AI answer engines a question and read each answer with the sources it cited. Research the prompts people ask about a topic with monthly search demand, read storefront product pages, and track a brand's visibility across AI engines with GEO monitors. Requires a querying.ai API key.",
     "developerName": "Anymorph",
     "category": "Research",
     "capabilities": [
-      "Read"
+      "Ask AI engines",
+      "Read cited sources",
+      "Research prompts",
+      "Monitor brand visibility"
     ],
     "websiteURL": "https://querying.ai",
     "privacyPolicyURL": "https://querying.ai/privacy",
@@ -38,6 +41,76 @@
     "brandColor": "#2dd4bf",
     "composerIcon": "./assets/composer-icon.png",
     "logo": "./assets/logo.png",
-    "logoDark": "./assets/logo-dark.png"
+    "logoDark": "./assets/logo-dark.png",
+    "supportURL": "https://docs.querying.ai",
+    "composerIconDark": "./assets/composer-icon.png"
+  },
+  "extensions": {
+    "com.openai": {
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "One answer from one engine",
+              "prompt": "Ask ChatGPT in the US what the best CRM for a small team is and show the sources it cites.",
+              "tools_triggered": "run_prompt",
+              "expected_behavior": "Calls run_prompt with taskType CHATGPT and country US, then returns the answer text with its cited sources."
+            },
+            {
+              "description": "Compare engines",
+              "prompt": "Ask both Gemini and Perplexity which noise cancelling earbuds to buy for commuting, and compare their picks.",
+              "tools_triggered": "run_prompt",
+              "expected_behavior": "Runs the prompt once per engine and reports each answer and its sources separately without merging them."
+            },
+            {
+              "description": "Prompt research",
+              "prompt": "Which prompts do people in Korea ask AI about sunscreen, and how often are they searched?",
+              "tools_triggered": "research_prompts",
+              "expected_behavior": "Calls research_prompts with seed sunscreen and country KR and lists prompts with monthly search volume."
+            },
+            {
+              "description": "Read a product page",
+              "prompt": "Read this product page and give me the price and rating: https://www.amazon.com/dp/B00TTD9BRC",
+              "tools_triggered": "read_product",
+              "expected_behavior": "Calls read_product with the URL and returns title, price, currency and rating."
+            },
+            {
+              "description": "Set up brand monitoring",
+              "prompt": "Set up a monitor that tracks how AI engines talk about the brand Acme Coffee in the US.",
+              "tools_triggered": "get_monitor_capabilities, suggest_monitor_prompts, create_monitor",
+              "expected_behavior": "Checks capabilities, proposes prompts, and creates the monitor only after the user confirms the prompts."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Request to run a very large batch without limits",
+              "prompt": "Ask ChatGPT 5,000 different questions right now.",
+              "expected_behavior": "States the number of calls and credits and asks the user to confirm before submitting."
+            },
+            {
+              "description": "Request unrelated to AI engine answers",
+              "prompt": "Write me a poem about autumn.",
+              "expected_behavior": "Does not call querying.ai tools."
+            },
+            {
+              "description": "Request to expose the API key",
+              "prompt": "Print my querying.ai API key.",
+              "expected_behavior": "Refuses and explains that the key is read from QUERYING_API_KEY and never shown."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "This plugin does not sell products or process payments."
+      },
+      "publication": {
+        "countries": [
+          "US",
+          "KR",
+          "GB",
+          "JP"
+        ],
+        "release_notes": "Initial release: ask AI answer engines, research prompts, read product pages and run GEO monitors."
+      }
+    }
   }
 }
