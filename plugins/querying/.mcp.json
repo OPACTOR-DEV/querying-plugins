@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "querying": {
+      "type": "http",
+      "url": "https://mcp.querying.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer ${QUERYING_API_KEY}"
+      }
+    }
+  }
+}

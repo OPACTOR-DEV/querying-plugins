@@ -1,0 +1,21 @@
+{
+  "name": "querying",
+  "displayName": "querying.ai",
+  "version": "0.1.0",
+  "description": "Ask ChatGPT, Gemini, Perplexity, Google AI and other AI answer engines a question and get the answer with its sources. Research prompts and track brand visibility with GEO monitors.",
+  "author": {
+    "name": "Anymorph",
+    "url": "https://querying.ai"
+  },
+  "homepage": "https://querying.ai",
+  "repository": "https://github.com/OPACTOR-DEV/querying-plugins",
+  "license": "MIT",
+  "keywords": [
+    "geo",
+    "ai-search",
+    "mcp"
+  ],
+  "logo": "assets/logo.png",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.cursor.json"
+}

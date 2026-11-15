@@ -1,0 +1,15 @@
+{
+  "name": "querying",
+  "version": "0.1.0",
+  "description": "Ask ChatGPT, Gemini, Perplexity, Google AI and other AI answer engines a question and get the answer with its sources. Research prompts and track brand visibility with GEO monitors.",
+  "mcpServers": {
+    "querying": {
+      "httpUrl": "https://mcp.querying.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer $QUERYING_API_KEY"
+      },
+      "timeout": 240000
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}

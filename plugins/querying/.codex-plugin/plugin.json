@@ -1,0 +1,43 @@
+{
+  "name": "querying",
+  "version": "0.1.0",
+  "description": "Ask ChatGPT, Gemini, Perplexity, Google AI and other AI answer engines a question and get the answer with its sources. Research prompts and track brand visibility with GEO monitors.",
+  "author": {
+    "name": "Anymorph",
+    "url": "https://querying.ai"
+  },
+  "homepage": "https://querying.ai",
+  "repository": "https://github.com/OPACTOR-DEV/querying-plugins",
+  "license": "MIT",
+  "keywords": [
+    "geo",
+    "ai-search",
+    "chatgpt",
+    "perplexity",
+    "gemini"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.codex.json",
+  "interface": {
+    "displayName": "querying.ai",
+    "shortDescription": "AI engine answers, sources and GEO monitors",
+    "longDescription": "Ask ChatGPT, Gemini, Perplexity, Google AI and other AI answer engines a question and get the answer with its sources. Research prompts and track brand visibility with GEO monitors. Needs a querying.ai API key in QUERYING_API_KEY.",
+    "developerName": "Anymorph",
+    "category": "Research",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://querying.ai",
+    "privacyPolicyURL": "https://querying.ai/privacy",
+    "termsOfServiceURL": "https://querying.ai/terms",
+    "defaultPrompt": [
+      "What does ChatGPT recommend for the best CRM for a small team in the US?",
+      "Find the prompts people ask AI about sunscreen in Korea",
+      "Set up a monitor for my brand across AI engines"
+    ],
+    "brandColor": "#2dd4bf",
+    "composerIcon": "./assets/composer-icon.png",
+    "logo": "./assets/logo.png",
+    "logoDark": "./assets/logo-dark.png"
+  }
+}

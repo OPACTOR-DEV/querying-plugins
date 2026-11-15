@@ -1,0 +1,20 @@
+{
+  "name": "querying",
+  "interface": {
+    "displayName": "querying.ai"
+  },
+  "plugins": [
+    {
+      "name": "querying",
+      "source": {
+        "source": "local",
+        "path": "./plugins/querying"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Research"
+    }
+  ]
+}

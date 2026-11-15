@@ -1,0 +1,17 @@
+{
+  "name": "querying",
+  "owner": {
+    "name": "Anymorph",
+    "url": "https://querying.ai"
+  },
+  "metadata": {
+    "description": "querying.ai plugins for AI coding agents"
+  },
+  "plugins": [
+    {
+      "name": "querying",
+      "source": "querying",
+      "description": "Ask ChatGPT, Gemini, Perplexity, Google AI and other AI answer engines a question and get the answer with its sources. Research prompts and track brand visibility with GEO monitors."
+    }
+  ]
+}
