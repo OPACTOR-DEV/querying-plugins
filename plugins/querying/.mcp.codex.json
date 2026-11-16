@@ -1,7 +1,22 @@
 {
   "mcpServers": {
     "querying": {
-      "url": "https://mcp.querying.ai/mcp"
+      "url": "https://mcp.querying.ai/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "oauth",
+            "client": {
+              "mode": "cimd"
+            },
+            "defaultScopes": [
+              "profile",
+              "email",
+              "offline_access"
+            ]
+          }
+        }
+      }
     }
   }
 }

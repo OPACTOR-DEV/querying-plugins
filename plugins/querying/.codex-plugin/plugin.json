@@ -1,6 +1,6 @@
 {
   "name": "querying",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Ask ChatGPT, Gemini, Perplexity, Google AI and other AI answer engines a question and get the answer with its sources. Research prompts and track brand visibility with GEO monitors.",
   "author": {
     "name": "Anymorph",
@@ -23,7 +23,7 @@
     "shortDescription": "AI engine answers and sources",
     "longDescription": "Ask ChatGPT, Gemini, Perplexity, Google AI Overviews, Copilot, Naver and other AI answer engines a question and read each answer with the sources it cited. Research the prompts people ask about a topic with monthly search demand, read storefront product pages, and track a brand's visibility across AI engines with GEO monitors. Sign in with a querying.ai account to connect.",
     "developerName": "Anymorph",
-    "category": "Research",
+    "category": "Data & Analytics",
     "capabilities": [
       "Ask AI engines",
       "Read cited sources",
@@ -38,7 +38,7 @@
       "Find the prompts people ask AI about sunscreen in Korea",
       "Set up a monitor for my brand across AI engines"
     ],
-    "brandColor": "#2dd4bf",
+    "brandColor": "#14b8a6",
     "composerIcon": "./assets/composer-icon.png",
     "logo": "./assets/logo.png",
     "logoDark": "./assets/logo-dark.png",
