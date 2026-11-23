@@ -1,6 +1,6 @@
 {
   "name": "querying",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Ask ChatGPT, Gemini, Perplexity, Google AI and other AI answer engines a question and get the answer with its sources. Research prompts and track brand visibility with GEO monitors.",
   "mcpServers": {
     "querying": {
