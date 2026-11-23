@@ -3,7 +3,7 @@
   "name": "io.github.OPACTOR-DEV/querying",
   "title": "querying.ai",
   "description": "AI engine answers with sources, prompt research and GEO monitors for ChatGPT, Gemini, Perplexity.",
-  "version": "0.2.0",
+  "version": "0.3.4",
   "websiteUrl": "https://querying.ai",
   "repository": {
     "url": "https://github.com/OPACTOR-DEV/querying-plugins",
